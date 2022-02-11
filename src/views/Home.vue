@@ -14,5 +14,10 @@ export default {
   components: {
     HelloWorld,
   },
+  data() {
+    return {
+      imgPath: require("@/assets/logo.png"),
+    };
+  },
 };
 </script>
