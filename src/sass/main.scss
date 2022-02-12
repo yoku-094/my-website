@@ -1,0 +1,45 @@
+
+body {
+    margin: 0px;
+}
+
+.el-tabs {
+    height: fit-content;
+
+    .is-left {
+        margin-right: 0px !important;
+    }
+
+    /** サイドメニュー */
+    .el-tabs__header {
+        width: fit-content;
+        background-color: rgb(31, 114, 170);
+
+        .el-tabs__nav-wrap::after,
+        .el-tabs__active-bar {
+            background-color: unset;
+        }
+        .el-tabs__nav {
+            width: 200px;
+            padding: 200px 0px;
+
+            /** メニュー */
+            .el-tabs__item {
+                height: 80px;
+                font-size: 20px;
+                text-align: center !important;
+                color: rgb(255, 254, 249);
+            }
+            /** 選択時 */
+            .is-active {
+                color: rgb(255, 220, 47) !important;
+            }
+            }
+    }
+
+    /** 表示エリア */
+    .el-tabs__content {
+        height: 100vh;
+        background-color: rgb(152, 207, 243);
+    }
+}

@@ -2,15 +2,19 @@
   <div class="home">
     <!-- サイドメニュー（タブ）の設定 -->
     <el-tabs
+      class="side-menu"
       v-model="activeName"
       :tab-position="tabPosition"
-      style="height: 200px"
       @tab-click="handleClick"
     >
-      <el-tab-pane label="Top" name="first"><Top>Top</Top></el-tab-pane>
-      <el-tab-pane label="About"><About>About</About></el-tab-pane>
-      <el-tab-pane label="Work"><Work>Work</Work></el-tab-pane>
-      <el-tab-pane label="Blog"><Blog>Blog</Blog></el-tab-pane>
+      <el-tab-pane label="Top" name="first" class="top"
+        ><Top>Top</Top></el-tab-pane
+      >
+      <el-tab-pane label="About" class="about"
+        ><About>About</About></el-tab-pane
+      >
+      <el-tab-pane label="Work" class="work"><Work>Work</Work></el-tab-pane>
+      <el-tab-pane label="Blog" class="blog"><Blog>Blog</Blog></el-tab-pane>
     </el-tabs>
   </div>
 </template>

@@ -1,6 +1,8 @@
 <template>
   <div class="top">
     <h1>This is an top page</h1>
+    <h2>This is an top page</h2>
+    <h3>This is an top page</h3>
   </div>
 </template>
 
@@ -13,19 +15,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+h1,
+h2,
 h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+  height: 100px;
 }
 </style>
