@@ -1,30 +1,33 @@
 <template>
   <div class="home">
+    <!-- サイドメニュー（タブ）の設定 -->
     <el-tabs
       v-model="activeName"
       :tab-position="tabPosition"
       style="height: 200px"
       @tab-click="handleClick"
     >
-      <el-tab-pane label="Home">Home</el-tab-pane>
-      <el-tab-pane label="About">About</el-tab-pane>
-      <el-tab-pane label="Work" name="first"><Work>Work</Work></el-tab-pane>
+      <el-tab-pane label="Top" name="first"><Top>Top</Top></el-tab-pane>
+      <el-tab-pane label="About"><About>About</About></el-tab-pane>
+      <el-tab-pane label="Work"><Work>Work</Work></el-tab-pane>
+      <el-tab-pane label="Blog"><Blog>Blog</Blog></el-tab-pane>
     </el-tabs>
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import Top from "../components/Top.vue";
+import About from "../components/About.vue";
 import Work from "../components/Work.vue";
+import Blog from "../components/Blog.vue";
 
 export default {
   name: "Home",
   components: {
-    HelloWorld,
+    Top,
+    About,
     Work,
+    Blog,
   },
   data() {
     return {
