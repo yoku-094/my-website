@@ -1,19 +1,41 @@
+/** hector-barbossa */
 /** nomal */
 @font-face {
-    font-family: 'simplicty';
-    src: url('~@/assets/fonts/Simplicity.ttf') format('truetype');
-  }
+  font-family: 'hector-barbossa';
+  src: url('~@/assets/fonts/Hector Barbossa.ttf') format('truetype');
+}
 
-  /** bold */
-  @font-face {
-    font-family: 'simplicty';
-    src: url('~@/assets/fonts/Simplicity.ttf') format('truetype');
-    font-weight: bold;
-  }
+/** bold */
+@font-face {
+  font-family: 'hector-barbossa';
+  src: url('~@/assets/fonts/Hector Barbossa.ttf') format('truetype');
+  font-weight: bold;
+}
 
-  /** italic */
-  @font-face {
-    font-family: 'simplicty';
-    src: url('~@/assets/fonts/Simplicity.ttf') format('truetype');
-    font-style: italic;
-  }
+/** italic */
+@font-face {
+  font-family: 'hector-barbossa';
+  src: url('~@/assets/fonts/Hector Barbossa.ttf') format('truetype');
+  font-style: italic;
+}
+
+/** angelitta */
+/** nomal */
+@font-face {
+  font-family: 'angelitta';
+  src: url('~@/assets/fonts/Angelitta.ttf') format('truetype');
+}
+
+/** bold */
+@font-face {
+  font-family: 'angelitta';
+  src: url('~@/assets/fonts/Angelitta.ttf') format('truetype');
+  font-weight: bold;
+}
+
+/** italic */
+@font-face {
+  font-family: 'angelitta';
+  src: url('~@/assets/fonts/Angelitta.ttf') format('truetype');
+  font-style: italic;
+}

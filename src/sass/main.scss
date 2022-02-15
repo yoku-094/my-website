@@ -32,14 +32,15 @@ body {
             /** メニュー */
             .el-tabs__item {
                 height: auto;
-                font-family: "simplicity";
-                font-size: 26px;
+                font-family: "hector-barbossa";
+                font-size: 30px;
                 font-style: normal;
                 font-weight: bold;
                 text-align: center !important;
                 color: rgb(255, 254, 249);
             }
             /** 選択時 */
+            .el-tabs__item:hover,
             .is-active {
                 color: rgb(255, 220, 47) !important;
             }
@@ -53,5 +54,9 @@ body {
         align-items: center;
         height: 100vh;
         background-color: rgb(152, 207, 243);
-    }
+        font-family: "angelitta";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: bold;
+}
 }

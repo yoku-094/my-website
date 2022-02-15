@@ -7,14 +7,12 @@
       :tab-position="tabPosition"
       @tab-click="handleClick"
     >
-      <el-tab-pane label="Top" name="first" class="top"
-        ><Top>top</Top></el-tab-pane
-      >
-      <el-tab-pane label="About" class="about"
-        ><About>about</About></el-tab-pane
-      >
-      <el-tab-pane label="Work" class="work"><Work>work</Work></el-tab-pane>
-      <el-tab-pane label="Blog" class="blog"><Blog>blog</Blog></el-tab-pane>
+      <el-tab-pane label="Top" name="first" class="top">
+        <Top></Top>
+      </el-tab-pane>
+      <el-tab-pane label="About" class="about"><About></About></el-tab-pane>
+      <el-tab-pane label="Work" class="work"><Work></Work></el-tab-pane>
+      <el-tab-pane label="Blog" class="blog"><Blog></Blog></el-tab-pane>
     </el-tabs>
   </div>
 </template>
