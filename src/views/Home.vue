@@ -8,13 +8,13 @@
       @tab-click="handleClick"
     >
       <el-tab-pane label="Top" name="first" class="top"
-        ><Top>Top</Top></el-tab-pane
+        ><Top>top</Top></el-tab-pane
       >
       <el-tab-pane label="About" class="about"
-        ><About>About</About></el-tab-pane
+        ><About>about</About></el-tab-pane
       >
-      <el-tab-pane label="Work" class="work"><Work>Work</Work></el-tab-pane>
-      <el-tab-pane label="Blog" class="blog"><Blog>Blog</Blog></el-tab-pane>
+      <el-tab-pane label="Work" class="work"><Work>work</Work></el-tab-pane>
+      <el-tab-pane label="Blog" class="blog"><Blog>blog</Blog></el-tab-pane>
     </el-tabs>
   </div>
 </template>
@@ -24,6 +24,7 @@ import Top from "../components/Top.vue";
 import About from "../components/About.vue";
 import Work from "../components/Work.vue";
 import Blog from "../components/Blog.vue";
+import "../assets/sass/style.scss";
 
 export default {
   name: "Home",
