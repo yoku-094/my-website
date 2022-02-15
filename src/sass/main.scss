@@ -4,7 +4,6 @@ body {
 }
 
 .el-tabs {
-    height: fit-content;
 
     .is-left {
         margin-right: 0px !important;
@@ -15,17 +14,24 @@ body {
         width: fit-content;
         background-color: rgb(31, 114, 170);
 
+        .is-left {
+            height: 100vh;
+        }
+
         .el-tabs__nav-wrap::after,
         .el-tabs__active-bar {
             background-color: unset;
         }
         .el-tabs__nav {
+            display: grid;
+            grid-template-rows: repeat(4, 36px);
+            row-gap: 50px;
+            align-content: center;
             width: 200px;
-            padding: 200px 0px;
 
             /** メニュー */
             .el-tabs__item {
-                height: 80px;
+                height: auto;
                 font-size: 20px;
                 text-align: center !important;
                 color: rgb(255, 254, 249);
@@ -39,6 +45,9 @@ body {
 
     /** 表示エリア */
     .el-tabs__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 100vh;
         background-color: rgb(152, 207, 243);
     }
