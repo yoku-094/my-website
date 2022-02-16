@@ -10,9 +10,9 @@
       <el-tab-pane label="Top" name="first" class="top">
         <Top></Top>
       </el-tab-pane>
-      <el-tab-pane label="About" class="about"><About></About></el-tab-pane>
-      <el-tab-pane label="Work" class="work"><Work></Work></el-tab-pane>
-      <el-tab-pane label="Blog" class="blog"><Blog></Blog></el-tab-pane>
+      <el-tab-pane label="about" class="about"><About></About></el-tab-pane>
+      <el-tab-pane label="work" class="work"><Work></Work></el-tab-pane>
+      <el-tab-pane label="blog" class="blog"><Blog></Blog></el-tab-pane>
     </el-tabs>
   </div>
 </template>
@@ -46,3 +46,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.home {
+  position: relative;
+}
+</style>
