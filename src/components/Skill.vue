@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="skill-card">
-        <div class="back-lang">
+        <div class="icon-group back-lang">
           <img
             class="java"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="skill-card">
-        <div class="cellphone-lang">
+        <div class="icon-group cellphone-lang">
           <img
             class="swift"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg"
@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class="skill-card">
-        <div class="framework">
+        <div class="icon-group framework">
           <img
             class="vuejs"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="skill-card">
-        <div class="database">
+        <div class="icon-group database">
           <img
             class="mysql"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
@@ -62,7 +62,7 @@
         </div>
       </div>
       <div class="skill-card">
-        <div class="source-admin">
+        <div class="icon-group source-admin">
           <img
             class="git"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
@@ -82,7 +82,7 @@
         </div>
       </div>
       <div class="skill-card">
-        <div class="dev-tools">
+        <div class="icon-group dev-tools">
           <img
             class="vscode"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
@@ -98,7 +98,7 @@
         </div>
       </div>
       <div class="skill-card">
-        <div class="tools">
+        <div class="icon-group tools">
           <img
             class="jira"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"
@@ -126,12 +126,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+/** 画面設定 */
 .skill {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .skill-contaner {
   padding: 50px;
   display: grid;
@@ -139,13 +141,25 @@ export default {
   grid-template-rows: repeat(2, 1fr);
   column-gap: 40px;
   row-gap: 40px;
-  filter: drop-shadow(-30px 30px 12px rgb(31 0 0));
-}
-.skill-card {
-  background: whitesmoke;
-}
-img {
-  width: 50px;
-  padding: 10px;
+
+  .skill-card {
+    background: whitesmoke;
+
+    /** アイコン整列用グリッド */
+    .icon-group {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+
+      /** アイコン */
+      img {
+        width: 50px;
+        padding: 10px;
+      }
+    }
+  }
+  .skill-card:hover {
+    box-shadow: 0px 0px 8px 12px rgb(50 0 0);
+  }
 }
 </style>
