@@ -9,6 +9,22 @@ import "element-ui/lib/theme-chalk/index.css"; // element-ui のCSSをimport
 Vue.config.productionTip = false;
 Vue.use(ElementUI, { locale });
 
+Vue.component("open-modal", {
+  template: `
+    <div id="overlay">
+        <div id="content">
+          <p>これがモーダルウィンドウです。</p>
+          <button v-on:click="closeModal">close</button>
+        </div>
+    </div>
+    `,
+  // methods: {
+  //   clickEvent: function () {
+  //     this.$emit("from-child");
+  //   },
+  // },
+});
+
 new Vue({
   router,
   render: (h) => h(App),

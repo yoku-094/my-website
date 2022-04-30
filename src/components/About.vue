@@ -2,33 +2,30 @@
   <div class="about">
     <div class="contaner">
       <div class="personal-data">
-        <div class="row">
-          <div class="first-name">Y</div>
-          <div class="underline-area">
-            <span class="family-name">.okushima</span>
-            <span class="birthday">1988.07</span>
-          </div>
-        </div>
+        <p>
+          1988年生まれ、しし座のO型。<br />
+          出生地は栃木県、出身地は福岡県。<br />
+        </p>
+        <p>
+          幼少から引っ越しを繰り返し、総計10回。<br />
+          歴代居住地は、福岡、愛知、静岡、東京、千葉、埼玉、栃木。<br />
+          好きなことは、ひとり旅。好きなものは、神社と刀剣。<br />
+        </p>
       </div>
       <div class="work-history">
-        <div class="row">
-          <div class="history-col">
-            <span class="period">2020 -</span>
-            <span class="job-title">application developer</span>
-          </div>
-          <div class="history-col">
-            <span class="period">2018 - 2019</span>
-            <span class="job-title">school administrator</span>
-          </div>
-          <div class="history-col">
-            <span class="period">2011 - 2017</span>
-            <span class="job-title">housewife</span>
-          </div>
-          <div class="history-col">
-            <span class="period">2007 - 2010</span>
-            <span class="job-title">government official</span>
-          </div>
-        </div>
+        <p>
+          高校卒業後、国家公務員として約4年間勤務。のちに結婚し、専業主婦として家庭内サポートに専念。<br />
+          婚姻関係解消後は倉庫バイト、小学校事務を経て、職業訓練校にてWebアプリ開発を学ぶ機会を得る。<br />
+          職業訓練校修了後、ご縁あって現勤務先に出会い、エンジニアとして無事に再出発を果たす。<br />
+        </p>
+        <p>
+          現在は、飲食店向けのWeb・iOSアプリ開発に携わっている。<br />
+          フロント・バック分け隔て無く開発をこなし、デザインツールで画面レイアウト作成を行うことも。<br />
+          それをきっかけにデザイン全般に興味を持ち、時間を見つけて知識と技術の習得、研鑽に努めている。<br />
+        </p>
+      </div>
+      <div class="future-goals">
+        <p>目標は、デザインのできるWebエンジニアになること。</p>
       </div>
     </div>
   </div>
@@ -47,72 +44,23 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #290707;
+  font-size: 16px;
 
   .contaner {
-    padding-top: 30px;
-    padding-left: 70px;
-    padding-bottom: 70px;
-    filter: drop-shadow(-30px 30px 12px rgb(31 0 0));
-    transform: rotate(-5deg);
-    background: whitesmoke;
-  }
-}
-/** 名前・生年月 */
-.personal-data {
-  display: inline-block;
-  text-align: center;
-  height: 130px;
-  padding-right: 170px;
-
-  .row {
-    display: flex;
-    font-family: "qubeckmagnetic";
-    letter-spacing: 4px;
-    text-align: center;
-    padding-right: calc(100% - 950px);
-
-    .first-name {
-      width: 100px;
-      font-size: 50px;
-      font-weight: 900;
-    }
-    .family-name {
-      font-size: 30px;
-      padding-left: 14px;
-      border-bottom: 100px;
-    }
-    .birthday {
-      padding-left: 260px;
-      font-size: 20px;
-    }
-
-    /** 下線 */
-    .underline-area {
-      width: 500px;
-      height: 58px;
-      padding-top: 50px;
-      border-bottom: 1px solid #290707;
-    }
-  }
-}
-
-/** 職歴 */
-.work-history {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  span {
-    height: 70px;
-  }
-
-  .history-col {
-    display: grid;
-    grid-template-columns: 250px 300px;
-    padding-left: 50px;
+    padding: 4% 8%;
     text-align: left;
-    letter-spacing: 4px;
+    filter: drop-shadow(0px 0px 6px rgb(0, 113, 70));
+    transform: rotate(-4deg);
+    background: whitesmoke;
+    line-height: 2;
   }
+
+  p {
+    color: #f36974;
+  }
+}
+.personal-data,
+.future-goals {
+  display: inline-block;
 }
 </style>

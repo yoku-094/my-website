@@ -1,25 +1,29 @@
 <template>
   <div class="top">
-    <h1>This is an top page This is an top page</h1>
-    <h2>This is an top page</h2>
-    <h3>This is an top page</h3>
-    <h1>This is an top page</h1>
+    <div class="greeting">
+      <p>Welcome to my site</p>
+      <h1>This is Yu's portfolio</h1>
+    </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: "Top",
-  props: {
-    msg: String,
-  },
-};
-</script>
-
 <style scoped lang="scss">
-h1,
-h2,
-h3 {
-  margin: 0px;
+.top {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.greeting {
+  width: calc(100% - 300px);
+  margin: 0 auto;
+
+  .title {
+    padding-bottom: 50px;
+    white-space: nowrap;
+  }
+  .text {
+    text-align: left;
+  }
 }
 </style>

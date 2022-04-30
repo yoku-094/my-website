@@ -1,5 +1,6 @@
 <template>
   <div class="skill">
+    <!-- スキルボックス -->
     <div class="skill-contaner">
       <div class="skill-card">
         <div class="icon-group front-lang">
@@ -20,6 +21,7 @@
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
           />
         </div>
+        <modal :modalItems="modalItems[0]"></modal>
       </div>
       <div class="skill-card">
         <div class="icon-group back-lang">
@@ -28,6 +30,7 @@
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
           />
         </div>
+        <modal :modalItems="modalItems[1]"></modal>
       </div>
       <div class="skill-card">
         <div class="icon-group cellphone-lang">
@@ -114,13 +117,35 @@
 </template>
 
 <script>
+import Modal from "../components/modal/Modal.vue";
+
 export default {
   name: "Work",
-  components: {},
+  components: {
+    Modal,
+  },
   data() {
     return {
-      value: 3,
+      showContent: false,
+      modalItems: [
+        {
+          modalTtl: "モダール１",
+          modalContent: "モーダル１が立ち上がった",
+        },
+        {
+          modalTtl: "モダール２",
+          modalContent: "モーダル２が立ち上がった",
+        },
+      ],
     };
+  },
+  methods: {
+    openModal: function () {
+      this.showContent = true;
+    },
+    closeModal: function () {
+      this.showContent = false;
+    },
   },
 };
 </script>
@@ -134,6 +159,31 @@ export default {
   align-items: center;
 }
 
+/** モーダル */
+#overlay {
+  /** 要素を重ねた時の順番 */
+  z-index: 1;
+
+  /** 画面全体を覆う設定 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  /**画面の中央に要素を表示させる設定 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#content {
+  z-index: 2;
+  width: 50%;
+  padding: 1em;
+  background: #fff;
+}
+
 .skill-contaner {
   padding: 50px;
   display: grid;
@@ -142,6 +192,10 @@ export default {
   column-gap: 40px;
   row-gap: 40px;
 
+  button {
+    padding: 0px;
+  }
+
   .skill-card {
     background: whitesmoke;
 
@@ -149,7 +203,7 @@ export default {
     .icon-group {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
 
       /** アイコン */
       img {
