@@ -9,7 +9,7 @@
         <p>{{ modalContent2 }}</p>
       </div>
       <div class="modal-btn-wrap">
-        <button class="modal-close" @click="modalClose">閉じる</button>
+        <button class="modal-close" @click="modalClose">close</button>
       </div>
     </div>
     <div class="modal-overlay" @click="modalClose"></div>
@@ -59,6 +59,7 @@ export default {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
+  letter-spacing: 2px;
 
   &-wrap {
     display: flex;
@@ -96,9 +97,10 @@ export default {
     transition: opacity 0.3s, visibility 0.3s;
   }
   &-close {
-    background: #1b58a6;
+    background: #2b705f;
     color: #fff;
-    font-size: 15px;
+    font-family: "OriginalSurfer-Regular";
+    font-size: 20px;
     border: none;
     border-radius: 4px;
     padding: 10px 16px;
@@ -112,7 +114,8 @@ export default {
     font-size: 20px;
     color: rgb(77, 76, 76);
   }
-  &-content {
+  &-content1,
+  &-content2 {
     margin-bottom: 30px;
     color: rgb(77, 76, 76);
   }

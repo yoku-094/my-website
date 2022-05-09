@@ -1,5 +1,5 @@
 <template>
-  <button class="btn modal" @click="modalClick">モーダル</button>
+  <button class="btn modal" @click="modalClick">more</button>
 </template>
 
 <script>
@@ -21,12 +21,15 @@ export default {
 
 <style lang="scss" scoped>
 .btn {
-  background: #10afd5;
+  background: #429e87;
   color: #fff;
-  font-size: 15px;
+  font-size: 20px;
+  font-family: "OriginalSurfer-Regular";
   border: none;
   border-radius: 4px;
-  padding: 10px 16px;
+  padding: 14px 40px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   cursor: pointer;
   transition: 0.3s;
   &:hover {

@@ -1,62 +1,24 @@
-/** hector-barbossa */
-/** nomal */
+/** KaiseiOpti */
+/** Bold */
 @font-face {
-  font-family: 'hector-barbossa';
-  src: url('~@/assets/fonts/Hector Barbossa.ttf') format('truetype');
+  font-family: "KaiseiOpti-Bold";
+  src: url("~@/assets/fonts/KaiseiOpti-Bold.ttf") format("truetype");
 }
 
-/** bold */
+/** Medium */
 @font-face {
-  font-family: 'hector-barbossa';
-  src: url('~@/assets/fonts/Hector Barbossa.ttf') format('truetype');
-  font-weight: bold;
+  font-family: "KaiseiOpti-Medium";
+  src: url("~@/assets/fonts/KaiseiOpti-Medium.ttf") format("truetype");
 }
 
-/** italic */
+/** Regular */
 @font-face {
-  font-family: 'hector-barbossa';
-  src: url('~@/assets/fonts/Hector Barbossa.ttf') format('truetype');
-  font-style: italic;
+  font-family: "KaiseiOpti-Regular";
+  src: url("~@/assets/fonts/KaiseiOpti-Regular.ttf") format("truetype");
 }
 
-/** angelitta */
-/** nomal */
+/** OriginalSurfer-Regular */
 @font-face {
-  font-family: 'angelitta';
-  src: url('~@/assets/fonts/Angelitta.ttf') format('truetype');
-}
-
-/** bold */
-@font-face {
-  font-family: 'angelitta';
-  src: url('~@/assets/fonts/Angelitta.ttf') format('truetype');
-  font-weight: bold;
-}
-
-/** italic */
-@font-face {
-  font-family: 'angelitta';
-  src: url('~@/assets/fonts/Angelitta.ttf') format('truetype');
-  font-style: italic;
-}
-
-/** qubeckmagnetic */
-/** nomal */
-@font-face {
-  font-family: 'qubeckmagnetic';
-  src: url('~@/assets/fonts/Qubeckmagnetic.ttf') format('truetype');
-}
-
-/** bold */
-@font-face {
-  font-family: 'qubeckmagnetic';
-  src: url('~@/assets/fonts/Qubeckmagnetic.ttf') format('truetype');
-  font-weight: bold;
-}
-
-/** italic */
-@font-face {
-  font-family: 'qubeckmagnetic';
-  src: url('~@/assets/fonts/Qubeckmagnetic.ttf') format('truetype');
-  font-style: italic;
+  font-family: "OriginalSurfer-Regular";
+  src: url("~@/assets/fonts/OriginalSurfer-Regular.ttf") format("truetype");
 }

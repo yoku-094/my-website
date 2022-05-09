@@ -28,15 +28,17 @@ body {
       row-gap: 50px;
       align-content: center;
       width: 200px;
+      z-index: 0;
 
       /** メニュー */
       .el-tabs__item {
         height: 100%;
-        // font-family: "hector-barbossa";
+        font-family: "OriginalSurfer-Regular";
         font-size: 30px;
         font-style: normal;
         font-weight: bold;
         text-align: center !important;
+        letter-spacing: 5px;
         color: #fdc5c9;
       }
       /** 選択時 */
@@ -49,16 +51,26 @@ body {
 
   /** 表示エリア */
   .el-tabs__content {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     height: 100%;
-    // padding-top: 50px;
-    background: linear-gradient(40deg, #ecffb8, #01795b);
-    // font-family: "qubeckmagnetic";
+    background: #b3ffc4;
+    background-image: radial-gradient(#ffffff 10%, transparent 16%),
+      radial-gradient(#ffffff 10%, transparent 16%);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+    font-family: "OriginalSurfer-Regular", "KaiseiOpti-Regular";
     font-size: 30px;
     font-style: normal;
     font-weight: bold;
-    color: #226156;
+    color: #4dc191;
+  }
+}
+
+/** モーダル */
+.modal {
+  max-width: 1000px !important;
+  overflow-wrap: break-word;
+
+  div[class^="modal-content"] {
+    text-align: left;
   }
 }

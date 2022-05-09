@@ -16,14 +16,10 @@
 }
 .greeting {
   width: calc(100% - 300px);
+  padding: 120px 20px 110px;
   margin: 0 auto;
-
-  .title {
-    padding-bottom: 50px;
-    white-space: nowrap;
-  }
-  .text {
-    text-align: left;
-  }
+  background: rgba(255, 255, 255, 0.3);
+  font-family: "OriginalSurfer-Regular";
+  letter-spacing: 4px;
 }
 </style>

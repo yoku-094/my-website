@@ -12,7 +12,7 @@
       </el-tab-pane>
       <el-tab-pane label="about" class="about"><About></About></el-tab-pane>
       <el-tab-pane label="skill" class="work"><Skill></Skill></el-tab-pane>
-      <el-tab-pane label="blog" class="blog"><Blog></Blog></el-tab-pane>
+      <!-- <el-tab-pane label="blog" class="blog"><Blog></Blog></el-tab-pane> -->
     </el-tabs>
   </div>
 </template>
@@ -21,7 +21,7 @@
 import Top from "../components/Top.vue";
 import About from "../components/About.vue";
 import Skill from "../components/Skill.vue";
-import Blog from "../components/Blog.vue";
+// import Blog from "../components/Blog.vue";
 import "../assets/sass/style.scss";
 
 export default {
@@ -30,7 +30,7 @@ export default {
     Top,
     About,
     Skill,
-    Blog,
+    // Blog,
   },
   data() {
     return {
